@@ -1,27 +1,25 @@
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 li{
     list-style-type: none;
 }
 .sidebar{
     background-color: #0369a1;
+    grid-column: 1/2;
+    grid-row:1/4;
 }
 .container{
     display:grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows:50px 100px 1fr;
 }
-.sidebar{
-    grid-column: 1/2;
-}
-.topbar{
+
+.topbar, .welcomebar{
     grid-column: 2/3;
     display:flex;
 }
-.welcomebar{
-    grid-column: 2/3;
-    display:flex;
-}
+
 input{
     max-height: 16px;
 }

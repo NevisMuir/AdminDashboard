@@ -4,3 +4,27 @@ body{
 li{
     list-style-type: none;
 }
+.sidebar{
+    background-color: #0369a1;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+.sidebar{
+    grid-column: 1/2;
+}
+.topbar{
+    grid-column: 2/3;
+    display:flex;
+}
+.welcomebar{
+    grid-column: 2/3;
+    display:flex;
+}
+input{
+    max-height: 16px;
+}
+.pagecontainer{
+    grid-column: 2/3;
+}

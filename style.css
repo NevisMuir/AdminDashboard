@@ -20,7 +20,7 @@ li{
 .container{
     display:grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows:50px 100px 1fr;
+    grid-template-rows:75px 150px 1fr;
 }
 
 .topbar, .welcomebar{
@@ -28,7 +28,9 @@ li{
     display:flex;
     align-items: center;
     background-color: #a3a3a3;
+    font-weight:600;
 }
+
 
 input{
     max-height: 16px;
@@ -37,17 +39,19 @@ input{
     grid-column: 2/3;
     display:grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 330px;
+    margin-right:50px;
+    min-height:1000px;
 }
 .projectsarea{
     grid-area:1/1/3/2;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
     gap:50px;
     margin:50px 50px;
 }
 .projectbox{
-    max-width:350px;
+    max-width:375px;
     max-height:350px;
     background-color: #d4d4d4;
     padding:10px 30px;
@@ -60,9 +64,7 @@ input{
     padding-bottom:10px;
     border-bottom:solid 1px slategrey;
 }
-.trendingarea{
-    grid-area:2/2/3/3;
-}
+
 #logo{
     font-size:2.45rem;
     font-weight:700;
@@ -95,4 +97,34 @@ ul{
     border-radius:5%;
     padding:10px;
     box-shadow: 0px 10px 15px grey;
+}
+.trendingarea{
+    grid-area:2/2/3/3;
+    align-self:start;
+}
+.trendingbox{
+    display:grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows:1fr 1fr;
+    height:74px;
+    margin:5px 0;
+}
+.trendingbox>.profilepic{
+    grid-area:1/1/3/2;
+    align-self:center;
+}
+.profilepic{
+    border-radius:100%;
+    border:solid 1px black;
+}
+.trendingbox>p{
+    margin:0;
+    margin-left:10px;
+    
+}
+.trendingbox>.username{
+    align-self: center;
+    font-weight:600;
+    font-size: 1.2rem;
+    margin:0;
 }

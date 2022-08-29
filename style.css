@@ -87,3 +87,12 @@ ul{
 #settings{
     margin-top: 60px;
 }
+.announcementarea, .trendingarea{
+    display:grid;
+    grid-template-rows:repeat(3,1fr);
+    align-self:center;
+    background-color: #d4d4d4;
+    border-radius:5%;
+    padding:10px;
+    box-shadow: 0px 10px 15px grey;
+}

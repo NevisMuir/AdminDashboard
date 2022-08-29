@@ -6,6 +6,9 @@ body{
 li{
     list-style-type: none;
 }
+input{
+    border-radius: 5%/50%;
+}
 .sidebar{
     background-color: #f97316;
     color:white;
@@ -30,7 +33,11 @@ li{
     background-color: #a3a3a3;
     font-weight:600;
 }
-
+button{
+    font-size:1.5rem;
+    padding:5px 20px;
+    border-radius:16px;
+}
 
 input{
     max-height: 16px;
